@@ -1,0 +1,97 @@
+@mixin breakpoint($point) {
+  @if ($point == md) {
+    @media only screen and(max-width: 992px) {
+      @content;
+    }
+  } @else if ($point == sm) {
+    @media only screen and(max-width: 767px) {
+      @content;
+    }
+  } @else if ($point == xs) {
+    @media only screen and(max-width: 576px) {
+      @content;
+    }
+  }
+}
+// MORE無腦寫法，多見諒QQ
+@mixin font-more() {
+  @media only screen and(max-width:1920px) {
+    font-size: 72px;
+  }
+  @media only screen and(max-width:1800px) {
+    font-size: 68px;
+  }
+  @media only screen and(max-width:1700px) {
+    font-size: 64px;
+  }
+  @media only screen and(max-width:1600px) {
+    font-size: 60px;
+  }
+  @media only screen and(max-width:1500px) {
+    font-size: 56px;
+  }
+  @media only screen and(max-width:1400px) {
+    font-size: 52px;
+  }
+  @media only screen and(max-width:1300px) {
+    font-size: 48px;
+  }
+  @media only screen and(max-width:1200px) {
+    font-size: 44px;
+  }
+  @media only screen and(max-width:1100px) {
+    font-size: 40px;
+  }
+  @media only screen and(max-width:1000px) {
+    font-size: 36px;
+  }
+  @media only screen and(max-width:900px) {
+    font-size: 32px;
+  }
+  @media only screen and(max-width:800px) {
+    font-size: 28px;
+  }
+  @media only screen and(max-width:700px) {
+    font-size: 24px;
+  }
+  @media only screen and(max-width:600px) {
+    font-size: 20px;
+  }
+  @media only screen and(max-width:500px) {
+    font-size: 16px;
+  }
+  @media only screen and(max-width:375px) {
+    font-size: 12px;
+  }
+}
+@mixin flex-base($justify-content: start, $align-items: start) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+@mixin bg($img, $width: initial, $height: initial) {
+  width: $width;
+  height: $height;
+  background: url($img);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@mixin absolute(
+  $top: initial,
+  $right: initial,
+  $bottom: initial,
+  $left: initial
+) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+@mixin hide-text {
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}

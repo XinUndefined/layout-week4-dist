@@ -1,0 +1,129 @@
+// footer
+.footer {
+  background-color: $base-primary;
+  .content {
+    position: relative;
+    @extend %content-width;
+    padding-top: 48px;
+    @include breakpoint(md) {
+      padding: 40px 48px 20px 48px;
+    }
+  }
+  .nav {
+    @include flex-base(space-between, center);
+    @include breakpoint(sm) {
+      @include absolute(initial, 48px);
+    }
+  }
+  .nav-menu {
+    display: flex;
+    @include breakpoint(md) {
+      margin-bottom: 26px;
+    }
+    @include breakpoint(sm) {
+      display: none;
+    }
+    li {
+      margin-right: 48px;
+      a {
+        color: $base-secondary;
+      }
+    }
+  }
+  .nav-img {
+    display: flex;
+    li {
+      margin-left: 32px;
+      img {
+        @include breakpoint(md) {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      @include breakpoint(md) {
+        margin-left: 24px;
+      }
+    }
+  }
+  .liaison-border {
+    border-bottom: 1px solid $base-secondary;
+    @include breakpoint(sm) {
+      margin-bottom: 16px;
+    }
+  }
+  .liaison {
+    @include flex-base(start, center);
+    margin-bottom: 16px;
+    p {
+      font-size: 36px;
+      color: $base-secondary;
+      @include breakpoint(md) {
+        font-size: 20px;
+      }
+      @include breakpoint(sm) {
+        font-size: 16px;
+      }
+    }
+    .phone {
+      margin-right: 23px;
+      @include breakpoint(md) {
+        width: 23px;
+        height: 23px;
+        margin-right: 12px;
+      }
+    }
+    .email {
+      margin-right: 12px;
+      @include breakpoint(md) {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+      }
+    }
+  }
+  .copyright {
+    @include flex-base(space-between);
+    @include breakpoint(sm) {
+      justify-content: start;
+      flex-direction: column;
+    }
+    ul {
+      @include flex-base(start, center);
+      padding: 20px 0;
+      @include breakpoint(sm) {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+      }
+      li {
+        color: $base-secondary;
+        @include breakpoint(sm) {
+          flex-direction: column;
+          padding-bottom: 8px;
+        }
+        img {
+          margin-right: 38px;
+          @include breakpoint(md) {
+            display: none;
+          }
+          @include breakpoint(sm) {
+            width: 46px;
+            height: 27px;
+            display: block;
+            @include absolute(initial, 0);
+            bottom: 10%;
+          }
+        }
+      }
+    }
+    .text {
+      margin-left: 62px;
+      @include breakpoint(md) {
+        margin-left: 24px;
+      }
+      @include breakpoint(sm) {
+        margin-left: 0;
+      }
+    }
+  }
+}

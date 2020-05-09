@@ -1,0 +1,598 @@
+//banner
+.banner {
+  position: relative;
+  @include bg(
+    "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png",
+    initial,
+    840px
+  );
+  @include breakpoint(md) {
+    @include bg("https://upload.cc/i1/2020/04/25/jH0crS.png", initial, 840px);
+  }
+  @include breakpoint(xs) {
+    @include bg("https://upload.cc/i1/2020/04/25/Z0h7q1.png", initial, 394px);
+  }
+  .content {
+    @include absolute(40%, 18%, 50%);
+    @include breakpoint(xs) {
+      right: 5%;
+    }
+    p {
+      font-size: 36px;
+      text-align: end;
+      color: $text-primary;
+      font-weight: 600;
+      @include breakpoint(md) {
+        font-size: 20px;
+      }
+      @include breakpoint(xs) {
+        font-size: 16px;
+      }
+    }
+    h2 {
+      color: $text-primary;
+      font-size: 64px;
+      @include breakpoint(md) {
+        font-size: 48px;
+      }
+      @include breakpoint(xs) {
+        font-size: 32px;
+      }
+    }
+  }
+}
+//column
+.column {
+  background-color: $bg-primary;
+  margin-bottom: 64px;
+  @include breakpoint(md) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint(xs) {
+    margin-bottom: 24px;
+  }
+  h3 {
+    font-size: 48px;
+    color: $text-primary;
+    text-align: center;
+    padding: 64px 0;
+    @include breakpoint(md) {
+      padding: 40px 0 32px 0;
+      font-size: 32px;
+    }
+    @include breakpoint(xs) {
+      padding: 32px 0;
+      font-size: 24px;
+    }
+  }
+  ul {
+    @extend %content-width;
+    @include flex-base(space-around);
+    padding-bottom: 80px;
+    @include breakpoint(md) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .order-1 {
+        order: 1;
+      }
+      .order-2 {
+        order: 2;
+      }
+    }
+    @include breakpoint(xs) {
+      justify-content: center;
+    }
+    li {
+      text-align: center;
+      @include breakpoint(md) {
+        width: 50%;
+        margin-bottom: 40px;
+      }
+      @include breakpoint(xs) {
+        width: 100%;
+        margin-bottom: 28px;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+        @include breakpoint(md) {
+          width: 80px;
+          height: 80px;
+          margin-bottom: 16px;
+        }
+      }
+      h4 {
+        font-size: 24px;
+        color: $text-primary;
+        @include breakpoint(md) {
+          margin-bottom: 8px;
+          font-size: 20px;
+        }
+      }
+      p {
+        text-align: justify;
+        display: inline-block;
+        width: 208px;
+      }
+    }
+  }
+}
+//classic
+.classic {
+  @extend %content-width;
+  margin-bottom: 80px;
+  h2 {
+    font-size: 48px;
+    color: $text-primary;
+    text-align: center;
+    margin-bottom: 60px;
+    @include breakpoint(md) {
+      margin-bottom: 32px;
+      font-size: 32px;
+    }
+    @include breakpoint(sm) {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+  }
+  .item {
+    @include flex-base(start, center);
+    margin-bottom: 24px;
+    @include breakpoint(md) {
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+    @include breakpoint(sm) {
+      justify-content: center;
+      margin: 0 12px;
+    }
+    .item-img {
+      width: 60%;
+      @include breakpoint(md) {
+        width: 50%;
+        @include breakpoint(sm) {
+          width: 100%;
+          position: relative;
+        }
+      }
+    }
+    .img-icon {
+      margin: 0 8px 0 24px;
+      @include breakpoint(md) {
+        width: 32px;
+        height: 32px;
+      }
+      @include breakpoint(sm) {
+        color: $base-secondary;
+        display: none;
+      }
+    }
+    .item-content {
+      width: 30%;
+      display: flex;
+      @include breakpoint(sm) {
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+      }
+    }
+    .icon-optical {
+      @include breakpoint(sm) {
+        @include bg(
+          "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9af042262fc422f07175ee3ee88a7d1cf415a0a0/week3/icon-diamond-white.svg",
+          32px,
+          25px
+        );
+        margin: 8px;
+      }
+    }
+    .icon-functional {
+      @include breakpoint(sm) {
+        @include bg(
+          "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9af042262fc422f07175ee3ee88a7d1cf415a0a0/week3/icon-thunder-white.svg",
+          23px,
+          32px
+        );
+        margin: 5px 8px;
+      }
+    }
+  }
+  .item-reverse {
+    @include flex-base(center, center);
+    flex-direction: row-reverse;
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
+    .img-filter {
+      filter: grayscale(100%);
+      &:hover {
+        filter: grayscale(0);
+        transition: 0.6s;
+      }
+    }
+    .content-reverse {
+      width: 30%;
+      margin-right: 24px;
+      @include flex-base(center, center);
+      flex-direction: row-reverse;
+      @include breakpoint(md) {
+        margin-right: 0;
+      }
+      @include breakpoint(sm) {
+        width: 100%;
+        position: absolute;
+      }
+      .icon-sunglasses {
+        @include breakpoint(sm) {
+          @include bg(
+            "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9af042262fc422f07175ee3ee88a7d1cf415a0a0/week3/icon-sun-white.svg",
+            32px,
+            32px
+          );
+          margin: 8px;
+        }
+      }
+    }
+  }
+  h5 {
+    font-size: 48px;
+    color: $base-primary;
+    margin-right: 24px;
+    line-height: normal;
+    display: block;
+    @include breakpoint(md) {
+      font-size: 28px;
+    }
+    @include breakpoint(sm) {
+      color: $base-secondary;
+    }
+  }
+}
+
+//joint
+.joint {
+  @include bg(
+    "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png"
+  );
+  h2 {
+    font-size: 48px;
+    color: $base-secondary;
+    text-align: center;
+    padding: 64px 0 60px 0;
+    @include breakpoint(md) {
+      padding: 40px 0 32px 0;
+      font-size: 32px;
+    }
+    @include breakpoint(xs) {
+      padding: 24px 0 16px 0;
+      font-size: 24px;
+    }
+  }
+  .img-main {
+    @include flex-base(center);
+    margin: 0 48px 60px;
+    @include breakpoint(md) {
+      margin-bottom: 40px;
+    }
+    @include breakpoint(xs) {
+      margin: 0 24px 20px;
+    }
+    .img-redWoman {
+      margin-left: 8px;
+    }
+    .img-bottomRight {
+      display: flex;
+      @include breakpoint(xs) {
+      }
+    }
+    .btn {
+      max-width: 818px;
+      position: relative;
+    }
+    .img-more {
+      width: 32%;
+      @include absolute(initial, 10%);
+      @include breakpoint(md) {
+        width: 30%;
+        right: 15%;
+      }
+      @include breakpoint(xs) {
+        left: 0;
+      }
+      @media only screen and(max-width:400px) {
+        width: 28%;
+      }
+    }
+    .more {
+      width: 30%;
+      a {
+        @include font-more();
+        font-weight: bold;
+        background-color: $base-secondary;
+        color: $base-primary;
+        width: 40%;
+        padding-left: 15px;
+        @include absolute(25px, 0);
+        transition: 1s;
+        @media only screen and(max-width:1600px) {
+          top: 35px;
+        }
+        @media only screen and(max-width:1200px) {
+          top: 25px;
+        }
+        &:hover {
+          text-shadow: 0 -80px 0 #aa0701dc, 0 -150px 0 #aa070177;
+        }
+        @include breakpoint(md) {
+          top: 16px;
+          width: 42%;
+          &:hover {
+            text-shadow: 0 -40px 0 #aa0701dc, 0 -80px 0 #aa070177;
+          }
+        }
+        @media only screen and(max-width:750px) {
+          top: 12px;
+        }
+        @include breakpoint(xs) {
+          left: 3%;
+          width: 35%;
+          padding-left: 5px;
+          &:hover {
+            text-shadow: 0 -20px 0 #aa0701dc, 0 -40px 0 #aa070177;
+          }
+        }
+        @media only screen and(max-width:500px) {
+          top: 10px;
+        }
+        @media only screen and(max-width:500px) {
+          width: 38%;
+        }
+        @media only screen and(max-width:450px) {
+          top: 8px;
+        }
+        @media only screen and(max-width:400px) {
+          top: 5px;
+        }
+        img {
+          @include absolute(30%, 5%);
+          display: block;
+          transition: 1s;
+          &:hover {
+            right: 0;
+          }
+          @media only screen and(max-width:1400px) {
+            widows: 40px;
+            height: 40px;
+          }
+          @media only screen and(max-width:1200px) {
+            widows: 35px;
+            height: 35px;
+          }
+          @include breakpoint(md) {
+            widows: 27px;
+            height: 27px;
+          }
+          @media only screen and(max-width:800px) {
+            widows: 24px;
+            height: 24px;
+          }
+          @include breakpoint(sm) {
+            width: 14px;
+            height: 14px;
+          }
+          @media only screen and(max-width:500px) {
+            top: 18%;
+          }
+          @media only screen and(max-width:400px) {
+            width: 10px;
+            width: 10px;
+            top: 18%;
+          }
+        }
+      }
+    }
+  }
+  .module {
+    @extend %content-width;
+    display: flex;
+    padding-bottom: 480px;
+    @include breakpoint(md) {
+      justify-content: center;
+      padding-bottom: 400px;
+    }
+    @include breakpoint(xs) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    h3 {
+      font-size: 72px;
+      @include flex-base(center, center);
+      color: $base-primary;
+      background-color: hsla(0, 0%, 100%, 0.5);
+      width: 100%;
+      height: 100%;
+      @include breakpoint(md) {
+        font-size: 32px;
+      }
+    }
+    .img-dobule {
+      @include bg(
+        "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png",
+        585px,
+        592px
+      );
+      margin-right: 30px;
+      @include breakpoint(md) {
+        width: 322px;
+        height: 280px;
+      }
+      @include breakpoint(xs) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    .img-youth {
+      @include bg(
+        "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png",
+        585px,
+        592px
+      );
+      @include breakpoint(md) {
+        width: 322px;
+        height: 280px;
+      }
+    }
+  }
+}
+// recommend
+.recommend {
+  margin-top: -300px;
+  @include breakpoint(md) {
+    margin-top: -350px;
+  }
+  @include breakpoint(xs) {
+    margin-top: -380px;
+  }
+  h2 {
+    font-size: 48px;
+    color: $base-secondary;
+    text-align: center;
+    margin-bottom: 60px;
+    @include breakpoint(md) {
+      margin-bottom: 32px;
+      font-size: 32px;
+    }
+    @include breakpoint(xs) {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+  }
+  ul {
+    @extend %content-width;
+    margin-bottom: 80px;
+    @include flex-base(space-between);
+    flex-wrap: wrap;
+    @include breakpoint(md) {
+      margin: 0 40px;
+    }
+    @include breakpoint(xs) {
+      margin: 0 12px;
+    }
+    li {
+      width: 23%;
+      @include breakpoint(md) {
+        width: 48%;
+        margin-bottom: 24px;
+      }
+      @include breakpoint(xs) {
+        width: 100%;
+      }
+    }
+    .border {
+      border: 1px solid #dee2e6;
+      background-color: $base-secondary;
+      padding: 16px;
+    }
+    .text {
+      padding-bottom: 16px;
+    }
+    .text-title {
+      font-weight: 500;
+    }
+    .text-gray {
+      color: #707070;
+    }
+    img {
+      border: 0;
+      display: block;
+      @include breakpoint(md) {
+        width: 100%;
+      }
+    }
+  }
+}
+// contact
+.contact {
+  background-color: $bg-primary;
+  .content {
+    max-width: 792px;
+    margin: 0 auto;
+    padding: 64px 0 92px;
+    font-weight: 600;
+    @include breakpoint(md) {
+      max-width: 498px;
+      padding: 40px 0 56px;
+    }
+    @include breakpoint(xs) {
+      margin: 0 24px;
+      padding: 24px 0 48px;
+    }
+  }
+  h2 {
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 24px;
+    @include breakpoint(md) {
+      padding-bottom: 16px;
+      font-size: 32px;
+    }
+    @include breakpoint(xs) {
+      padding-bottom: 8px;
+      font-size: 24px;
+    }
+  }
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    @include breakpoint(md) {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+    @include breakpoint(xs) {
+      margin-bottom: 8px;
+    }
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .text {
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    background-color: transparent;
+    border: 1px solid #000;
+    @include breakpoint(md) {
+      margin-bottom: 12px;
+    }
+    @include breakpoint(xs) {
+      padding: 7px 12px;
+    }
+  }
+  // checkbox偷懶XD
+  .checkbox {
+    outline: 2px solid #000;
+  }
+  .submit {
+    width: 180px;
+    height: 54px;
+    display: block;
+    margin: auto;
+    background-color: $base-primary;
+    color: $base-secondary;
+    border: 0;
+    margin-top: 42px;
+    @include breakpoint(md) {
+      width: 136px;
+      height: 36px;
+      margin-top: 24px;
+    }
+    @include breakpoint(xs) {
+      margin-top: 20px;
+    }
+    cursor: pointer;
+    &:hover {
+      background-color: $text-primary;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.header {
+  @include flex-base(space-between, center);
+  background-color: $base-primary;
+  @include breakpoint(sm) {
+    position: relative;
+    justify-content: center;
+  }
+  .ham-icon {
+    display: none;
+    color: $base-secondary;
+    @include breakpoint(sm) {
+      display: block;
+      @include absolute(initial, initial, initial, 5%);
+    }
+  }
+  h1 {
+    @include bg(
+      "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png",
+      80px,
+      49px
+    );
+    @include hide-text();
+    margin-left: 88px;
+    @include breakpoint(md) {
+      margin-left: 48px;
+    }
+    @include breakpoint(sm) {
+      width: 48px;
+      height: 30px;
+      margin: 10px;
+    }
+  }
+  ul {
+    @include flex-base(center, center);
+    margin-right: 88px;
+    padding: 40px 0;
+    @include breakpoint(md) {
+      margin-right: 48px;
+    }
+    @include breakpoint(sm) {
+      @include absolute(100%);
+      flex-direction: column;
+      width: 100%;
+      padding: 0px;
+      z-index: 1;
+    }
+  }
+  .list {
+    background-color: $base-primary;
+    @include breakpoint(sm) {
+      width: 100%;
+      transform: translateX(-100%);
+    }
+    a {
+      font-size: 20px;
+      margin-left: 64px;
+      color: $base-secondary;
+      @include breakpoint(md) {
+        margin-left: 40px;
+      }
+      @include breakpoint(sm) {
+        margin-left: auto;
+        text-align: center;
+        border-top: 1px solid $base-secondary;
+        padding: 16px 0;
+      }
+    }
+  }
+  .active {
+    transform: translateX(0);
+    transition: all 0.8s;
+    &:hover {
+      background-color: #8f0400;
+    }
+  }
+}
