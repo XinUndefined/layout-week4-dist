@@ -1800,16 +1800,16 @@ h6 {
       border-top: none; }
   .qa-content .down {
     display: none; }
-  .qa-content .text {
+  .qa-content .qa-text {
     padding: 22px 38px;
     background-color: #f2f2f2;
     border-right: 1px solid #000;
     border-left: 1px solid #000; }
-  .qa-content .active .down {
+  .qa-content .qa-active .down {
     display: block; }
-  .qa-content .active .up {
+  .qa-content .qa-active .up {
     display: none; }
-  .qa-content .active .text {
+  .qa-content .qa-active .qa-text {
     border-bottom: 1px solid #000; }
 
 /*# sourceMappingURL=all.css.map */

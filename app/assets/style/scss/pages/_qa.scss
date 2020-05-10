@@ -87,20 +87,20 @@
   .down {
     display: none;
   }
-  .text {
+  .qa-text {
     padding: 22px 38px;
     background-color: #f2f2f2;
     border-right: 1px solid #000;
     border-left: 1px solid #000;
   }
-  .active {
+  .qa-active {
     .down {
       display: block;
     }
     .up {
       display: none;
     }
-    .text {
+    .qa-text {
       border-bottom: 1px solid #000;
     }
   }
