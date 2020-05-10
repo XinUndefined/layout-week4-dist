@@ -1,0 +1,230 @@
+// series-menu
+.series-menu {
+  margin-bottom: 88px;
+  @include breakpoint(md) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint(xs) {
+    margin-bottom: 24px;
+  }
+  .nav {
+    @extend %content-width;
+    display: flex;
+    justify-content: center;
+
+    li {
+      display: flex;
+      border: 1px solid #dcdcdc;
+      border-bottom: 16px solid transparent;
+      @include breakpoint(sm) {
+        border-bottom: 8px solid transparent;
+      }
+      @include breakpoint(xs) {
+        border-bottom: 4px solid transparent;
+      }
+      &:hover {
+        border-bottom: 16px solid $base-primary;
+        @include breakpoint(sm) {
+          border-bottom: 8px solid $base-primary;
+        }
+        @include breakpoint(xs) {
+          border-bottom: 4px solid $base-primary;
+        }
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: 600;
+    color: #000;
+    padding: 10px 50px 5px;
+    @include breakpoint(md) {
+      font-size: 28px;
+    }
+    @include breakpoint(sm) {
+      font-size: 14px;
+      z-index: 1;
+    }
+    @include breakpoint(xs) {
+      padding: 8px 20px;
+    }
+    img {
+      margin-right: 8px;
+      @include breakpoint(md) {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+      }
+      @include breakpoint(sm) {
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+.menu-banner {
+  display: flex;
+  .img-left {
+    padding-right: 24px;
+  }
+  li {
+    img:first-child {
+      @include breakpoint(sm) {
+        display: none;
+      }
+    }
+    img:last-child {
+      display: none;
+      @include breakpoint(sm) {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+// series-content
+.series-content {
+  margin-bottom: 156px;
+  @include breakpoint(md) {
+    margin-bottom: 104px;
+  }
+  @include breakpoint(xs) {
+    margin-bottom: 56px;
+  }
+  h2 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 42px;
+    @include breakpoint(md) {
+      font-size: 32px;
+    }
+    @include breakpoint(xs) {
+      font-size: 20px;
+    }
+  }
+  .product {
+    @extend %content-width;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      width: 23%;
+      margin: 0 24px 104px 0;
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+      @include breakpoint(md) {
+        width: 33.33333%;
+        margin-bottom: 72px;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+      @include breakpoint(xs) {
+        width: 100%;
+        margin: 0 12px 32px;
+        &:nth-child(2) {
+          margin-right: 12px;
+        }
+        &:nth-child(1n + 4) {
+          display: none;
+        }
+      }
+    }
+  }
+  .title-text {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 48px;
+    @include breakpoint(md) {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+    @include breakpoint(xs) {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+  .content-text {
+    max-width: 282px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 500;
+    p:last-child {
+      color: $base-primary;
+    }
+    @include breakpoint(sm) {
+      font-size: 16px;
+      max-width: 100%;
+    }
+  }
+  .color {
+    display: flex;
+    .color-1 {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-color: #5f3e2d;
+      border-radius: 4px;
+      margin-right: 8px;
+      @include breakpoint(sm) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .color-2 {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-color: #b75929;
+      border-radius: 4px;
+      @include breakpoint(sm) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .pages {
+    display: flex;
+    justify-content: center;
+    li {
+      border: 1px solid #000;
+      margin: 0px 0px -1px -1px;
+      &:last-child {
+        background-color: #f2f2f2;
+      }
+      @include breakpoint(xs) {
+        font-size: 12px;
+      }
+    }
+  }
+  .number {
+    padding: 10px 15px;
+    color: #000;
+    &:hover {
+      color: $base-secondary;
+      background-color: #000;
+    }
+    @include breakpoint(xs) {
+      padding: 8px 10px;
+    }
+  }
+  .text {
+    padding: 10px;
+    color: #000;
+    &:hover {
+      color: $base-secondary;
+      background-color: #9d9d9d;
+    }
+    @include breakpoint(xs) {
+      padding: 8px;
+    }
+  }
+}

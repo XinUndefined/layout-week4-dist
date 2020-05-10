@@ -42,7 +42,6 @@
       flex-direction: column;
       width: 100%;
       padding: 0px;
-      z-index: 1;
     }
   }
   .list {
@@ -50,6 +49,7 @@
     @include breakpoint(sm) {
       width: 100%;
       transform: translateX(-100%);
+      z-index: 1;
     }
     a {
       font-size: 20px;
@@ -67,6 +67,7 @@
     }
   }
   .active {
+    z-index: 2;
     transform: translateX(0);
     transition: all 0.8s;
     &:hover {
