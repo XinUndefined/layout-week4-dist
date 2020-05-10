@@ -1,0 +1,193 @@
+.store-banner {
+  margin-bottom: 16px;
+  @include breakpoint(md) {
+    margin-bottom: 8px;
+  }
+  @include bg(
+    "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png",
+    initial,
+    304px
+  );
+  @include breakpoint(xs) {
+    @include bg("https://upload.cc/i1/2020/05/10/vicFH3.png", initial, 143px);
+  }
+  .content {
+    @extend %content-width;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    h2 {
+      font-size: 64px;
+      margin-right: 24px;
+      margin-bottom: 12px;
+      @include breakpoint(md) {
+        font-size: 48px;
+        margin-left: 48px;
+        margin-right: 16px;
+      }
+      @include breakpoint(xs) {
+        font-size: 28px;
+        margin-left: 12px;
+        margin-right: 8px;
+      }
+    }
+    img {
+      margin-bottom: 16px;
+      @include breakpoint(md) {
+        width: 30px;
+        height: 43px;
+      }
+      @include breakpoint(xs) {
+        width: 16px;
+        height: 24px;
+      }
+    }
+  }
+}
+.area {
+  @extend %content-width;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  @include breakpoint(md) {
+    margin-bottom: 24px;
+  }
+  @include breakpoint(xs) {
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 22px;
+    @include breakpoint(md) {
+      font-size: 16px;
+      margin-left: 48px;
+    }
+    @include breakpoint(xs) {
+      font-size: 14px;
+      margin-left: 12px;
+      margin-right: 16px;
+    }
+  }
+  select {
+    width: 266px;
+    height: 45px;
+    appearance: none;
+    padding-left: 20px;
+    opacity: 0.5;
+    @include breakpoint(md) {
+      width: 237px;
+    }
+    @include breakpoint(xs) {
+      width: 280px;
+    }
+  }
+  .icon {
+    margin-left: -20px;
+  }
+}
+.card {
+  @extend %content-width;
+  margin-bottom: 154px;
+  @include breakpoint(md) {
+    margin-bottom: 104px;
+  }
+  @include breakpoint(xs) {
+    margin-bottom: 40px;
+  }
+  & > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & > li {
+      width: 370px;
+      border: 1px solid #00000021;
+      margin-right: 24px;
+      margin-bottom: 28px;
+      @include breakpoint(md) {
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+      @include breakpoint(sm) {
+        width: 324px;
+      }
+      @include breakpoint(xs) {
+        margin-right: 0;
+        width: 352px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: 24px;
+    padding: 16px 24px;
+    border-bottom: 1px solid #00000021;
+  }
+  .content {
+    padding: 16px 40px;
+    li {
+      display: flex;
+      font-size: 20px;
+      margin-bottom: 8px;
+      &:last-child img {
+        height: 30px;
+      }
+      img {
+        margin-right: 8px;
+      }
+    }
+  }
+  a {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #000000;
+    color: $base-secondary;
+    border: none;
+  }
+}
+.store-pages {
+  display: none;
+  @include breakpoint(xs) {
+    display: block;
+    margin-bottom: 56px;
+  }
+  .pages {
+    display: flex;
+    justify-content: center;
+    li {
+      border: 1px solid #000;
+      margin: 0px 0px -1px -1px;
+      &:last-child {
+        background-color: #f2f2f2;
+      }
+      @include breakpoint(xs) {
+        font-size: 12px;
+      }
+    }
+  }
+  .number {
+    padding: 10px 15px;
+    color: #000;
+    &:hover {
+      color: $base-secondary;
+      background-color: #000;
+    }
+    @include breakpoint(xs) {
+      padding: 8px 10px;
+    }
+  }
+  .text {
+    padding: 10px;
+    color: #000;
+    &:hover {
+      color: $base-secondary;
+      background-color: #9d9d9d;
+    }
+    @include breakpoint(xs) {
+      padding: 8px;
+    }
+  }
+}
