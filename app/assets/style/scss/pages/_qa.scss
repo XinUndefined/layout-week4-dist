@@ -1,0 +1,107 @@
+.qa-banner {
+  margin-bottom: 88px;
+  @include breakpoint(md) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint(xs) {
+    margin-bottom: 24px;
+  }
+  @include bg(
+    "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png",
+    initial,
+    304px
+  );
+  @include breakpoint(xs) {
+    @include bg("https://upload.cc/i1/2020/05/10/vicFH3.png", initial, 143px);
+  }
+  .content {
+    @extend %content-width;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    h2 {
+      font-size: 64px;
+      margin-right: 24px;
+      margin-bottom: 12px;
+      @include breakpoint(md) {
+        font-size: 48px;
+        margin-left: 48px;
+        margin-right: 16px;
+      }
+      @include breakpoint(xs) {
+        font-size: 28px;
+        margin-left: 12px;
+        margin-right: 8px;
+      }
+    }
+    img {
+      margin-bottom: 16px;
+      @include breakpoint(md) {
+        width: 48px;
+        height: 48px;
+      }
+      @include breakpoint(xs) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+.qa-content {
+  @extend %content-width;
+  margin-bottom: 156px;
+  @include breakpoint(md) {
+    margin: 0 48px 104px;
+  }
+  @include breakpoint(xs) {
+    margin: 0 12px 56px;
+  }
+  h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    @include breakpoint(md) {
+      font-size: 28px;
+      margin-bottom: 32px;
+    }
+    @include breakpoint(xs) {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .btn a {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 38px;
+    color: #000000;
+    border: 1px solid #000;
+  }
+  .qa-item {
+    position: relative;
+    z-index: 1;
+
+    &:nth-child(1n + 2) a {
+      border-top: none;
+    }
+  }
+  .down {
+    display: none;
+  }
+  .text {
+    padding: 22px 38px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+  }
+  .active {
+    .down {
+      display: block;
+    }
+    .up {
+      display: none;
+    }
+    .text {
+      border-bottom: 1px solid #000;
+    }
+  }
+}
