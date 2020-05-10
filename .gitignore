@@ -1,6 +1,7 @@
-node_modules
-.publish
-gulpfile.js
 package-lock.json
 package.json
 .browserslistrc
+public
+node_modules
+.publish
+gulpfile.js

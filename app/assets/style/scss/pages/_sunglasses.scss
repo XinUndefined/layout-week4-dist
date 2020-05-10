@@ -1,0 +1,155 @@
+// sunglasses-content
+.sunglasses-content {
+  @include breakpoint(md) {
+    margin-bottom: 104px;
+  }
+  @include breakpoint(xs) {
+    margin-bottom: 56px;
+  }
+  h2 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 42px;
+    @include breakpoint(md) {
+      font-size: 32px;
+    }
+    @include breakpoint(xs) {
+      font-size: 20px;
+    }
+  }
+  .product {
+    @extend %content-width;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      width: 30%;
+      margin: 0 24px 104px 0;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:nth-child(1n + 7) {
+        display: none;
+      }
+      @include breakpoint(md) {
+        width: 33.33333%;
+        margin-bottom: 72px;
+        &:nth-child(1n + 7) {
+          display: block;
+        }
+        &:nth-child(3n) {
+          display: none;
+        }
+      }
+      @include breakpoint(xs) {
+        width: 100%;
+        margin: 0 12px 32px;
+        &:nth-child(3n) {
+          display: block;
+          margin-right: 12px;
+        }
+        &:nth-child(1n + 4) {
+          display: none;
+        }
+      }
+    }
+  }
+  .title-text {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 48px;
+    @include breakpoint(md) {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+    @include breakpoint(xs) {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+  .content-text {
+    max-width: 282px;
+
+    font-size: 24px;
+    font-weight: 500;
+    p:last-child {
+      color: $base-primary;
+    }
+    @include breakpoint(md) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include breakpoint(sm) {
+      font-size: 16px;
+      max-width: 100%;
+    }
+  }
+  .color {
+    display: flex;
+    .color-1 {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-color: #5f3e2d;
+      border-radius: 4px;
+      margin-right: 8px;
+      @include breakpoint(sm) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .color-2 {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-color: #b75929;
+      border-radius: 4px;
+      @include breakpoint(sm) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .display {
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+  .pages {
+    display: flex;
+    justify-content: center;
+    li {
+      border: 1px solid #000;
+      margin: 0px 0px -1px -1px;
+      &:last-child {
+        background-color: #f2f2f2;
+      }
+      @include breakpoint(xs) {
+        font-size: 12px;
+      }
+    }
+  }
+  .number {
+    padding: 10px 15px;
+    color: #000;
+    &:hover {
+      color: $base-secondary;
+      background-color: #000;
+    }
+    @include breakpoint(xs) {
+      padding: 8px 10px;
+    }
+  }
+  .text {
+    padding: 10px;
+    color: #000;
+    &:hover {
+      color: $base-secondary;
+      background-color: #9d9d9d;
+    }
+    @include breakpoint(xs) {
+      padding: 8px;
+    }
+  }
+}
