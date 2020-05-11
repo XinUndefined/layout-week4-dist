@@ -2,6 +2,10 @@ $(".ham-icon").click(function (e) {
   e.preventDefault();
   $(".list").toggleClass("active");
 });
+$(".blog-icon").click(function (e) {
+  e.preventDefault();
+  $(".blog-list").toggleClass("active");
+});
 
 // 隱藏所有的 li 內文
 $(".qa-text").hide();

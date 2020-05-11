@@ -29,6 +29,9 @@
       height: 30px;
       margin: 10px;
     }
+    a {
+      height: 100%;
+    }
   }
   ul {
     @include flex-base(center, center);

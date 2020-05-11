@@ -1,0 +1,224 @@
+.blog-nav {
+  background-color: $text-primary;
+  margin-bottom: 88px;
+  @include breakpoint(md) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint(sm) {
+    background-color: $base-secondary;
+    margin-bottom: 0;
+  }
+  .content {
+    @extend %content-width;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    @include breakpoint(md) {
+      margin: 0 48px;
+    }
+    @include breakpoint(sm) {
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .nav {
+    display: flex;
+    @include breakpoint(sm) {
+      display: block;
+      position: relative;
+    }
+    li {
+      margin-right: 48px;
+      &:last-child {
+        display: none;
+      }
+      @include breakpoint(md) {
+        margin-right: 32px;
+      }
+      @include breakpoint(sm) {
+        display: none;
+        margin-right: 0;
+        text-align: center;
+        padding: 14px 0;
+        border-bottom: 1px solid #00000020;
+        &:last-child {
+          display: block;
+          max-width: 767px;
+          background-color: $base-secondary;
+          border: 1px solid #000;
+          padding: 0;
+        }
+      }
+      a {
+        color: $base-secondary;
+        font-size: 20px;
+        font-weight: 600;
+        @include breakpoint(md) {
+          margin-right: 16px;
+        }
+        @include breakpoint(sm) {
+          color: #000;
+        }
+      }
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    .blog-up {
+      display: none;
+    }
+    .active {
+      display: block;
+      .blog-down {
+        display: none;
+      }
+      .blog-up {
+        display: inline-block;
+      }
+    }
+  }
+}
+.blog-content {
+  @extend %content-width;
+  @include breakpoint(md) {
+    margin: 0 48px;
+  }
+  @include breakpoint(sm) {
+    margin: 0 12px;
+  }
+  ul li {
+    display: flex;
+    margin-bottom: 60px;
+    @include breakpoint(sm) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    & > img {
+      width: 50%;
+      margin-right: 24px;
+      @include breakpoint(sm) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
+    h3 {
+      color: $text-primary;
+      font-size: 32px;
+      @include breakpoint(md) {
+        font-size: 20px;
+      }
+      @include breakpoint(md) {
+        font-size: 16px;
+      }
+    }
+  }
+  .text {
+    width: 50%;
+    @include breakpoint(sm) {
+      width: 100%;
+    }
+    & > p {
+      font-size: 18px;
+      color: #555555;
+      @include breakpoint(md) {
+        font-size: 14px;
+      }
+      @include breakpoint(sm) {
+        display: none;
+      }
+    }
+  }
+  .text-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @include breakpoint(md) {
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 600;
+      @include breakpoint(md) {
+        font-size: 16px;
+      }
+      @include breakpoint(sm) {
+        font-size: 14px;
+      }
+    }
+    .date {
+      @include breakpoint(md) {
+        font-size: 14px;
+      }
+    }
+  }
+  a {
+    font-size: 36px;
+    color: #000;
+    font-weight: 700;
+    text-align: end;
+    &:hover {
+      img {
+        position: relative;
+        left: 1%;
+      }
+    }
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+  .more {
+    font-weight: 700;
+    font-size: 14px;
+    display: none;
+    @include breakpoint(md) {
+      display: inline-block;
+    }
+  }
+}
+.pages {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 156px;
+  @include breakpoint(md) {
+    margin-bottom: 104px;
+  }
+  @include breakpoint(sm) {
+    margin-bottom: 56px;
+  }
+  li {
+    border: 1px solid #000;
+    margin: 0px 0px -1px -1px;
+    &:last-child {
+      background-color: #f2f2f2;
+    }
+    @include breakpoint(xs) {
+      font-size: 12px;
+    }
+  }
+  .number {
+    padding: 10px 15px;
+    color: #000;
+    &:hover {
+      color: $base-secondary;
+      background-color: #000;
+    }
+    @include breakpoint(xs) {
+      padding: 8px 10px;
+    }
+  }
+  .text {
+    padding: 10px;
+    color: #000;
+    &:hover {
+      color: $base-secondary;
+      background-color: #9d9d9d;
+    }
+    @include breakpoint(xs) {
+      padding: 8px;
+    }
+  }
+}
