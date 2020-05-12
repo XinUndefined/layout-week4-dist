@@ -151,7 +151,7 @@ h6 {
   font-weight: bold;
   line-height: 1.2; }
 
-.footer .content, .column ul, .classic, .joint .module, .recommend ul, .series-menu .nav, .series-content .product, .sunglasses-content .product, .store-banner .content, .area, .card, .qa-banner .content, .qa-content, .blog-nav .content, .blog-content {
+.footer .content, .column ul, .classic, .joint .module, .recommend ul, .series-menu .nav, .series-content .product, .sunglasses-content .product, .store-banner .content, .area, .card, .card-map, .blog-nav .content, .blog-content, .qa-banner .content, .qa-content {
   max-width: 1200px;
   margin: 0 auto; }
 
@@ -1711,108 +1711,156 @@ h6 {
       .store-pages .text {
         padding: 8px; } }
 
-.qa-banner {
-  margin-bottom: 88px;
-  width: initial;
-  height: 304px;
-  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; }
+.card-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 154px; }
   @media only screen and (max-width: 992px) {
-    .qa-banner {
-      margin-bottom: 40px; } }
+    .card-map {
+      margin: 0 48px 104px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   @media only screen and (max-width: 576px) {
-    .qa-banner {
-      margin-bottom: 24px; } }
-  @media only screen and (max-width: 576px) {
-    .qa-banner {
-      width: initial;
-      height: 143px;
-      background: url("https://upload.cc/i1/2020/05/10/vicFH3.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center; } }
-  .qa-banner .content {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
-    .qa-banner .content h2 {
-      font-size: 64px;
-      margin-right: 24px;
-      margin-bottom: 12px; }
-      @media only screen and (max-width: 992px) {
-        .qa-banner .content h2 {
-          font-size: 48px;
-          margin-left: 48px;
-          margin-right: 16px; } }
-      @media only screen and (max-width: 576px) {
-        .qa-banner .content h2 {
-          font-size: 28px;
-          margin-left: 12px;
-          margin-right: 8px; } }
-    .qa-banner .content img {
-      margin-bottom: 16px; }
-      @media only screen and (max-width: 992px) {
-        .qa-banner .content img {
-          width: 48px;
-          height: 48px; } }
-      @media only screen and (max-width: 576px) {
-        .qa-banner .content img {
-          width: 24px;
-          height: 24px; } }
-
-.qa-content {
-  margin-bottom: 156px; }
-  @media only screen and (max-width: 992px) {
-    .qa-content {
-      margin: 0 48px 104px; } }
-  @media only screen and (max-width: 576px) {
-    .qa-content {
+    .card-map {
       margin: 0 12px 56px; } }
-  .qa-content h2 {
-    font-size: 32px;
-    margin-bottom: 16px; }
+  .card-map .md-img {
+    display: none; }
     @media only screen and (max-width: 992px) {
-      .qa-content h2 {
-        font-size: 28px;
-        margin-bottom: 32px; } }
+      .card-map .md-img {
+        display: block;
+        padding-right: 24px; } }
     @media only screen and (max-width: 576px) {
-      .qa-content h2 {
-        font-size: 20px;
-        margin-bottom: 16px; } }
-  .qa-content .btn a {
+      .card-map .md-img {
+        display: none; } }
+  .card-map > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 22px 38px;
-    color: #000000;
-    border: 1px solid #000; }
-  .qa-content .qa-item {
-    position: relative;
-    z-index: 1; }
-    .qa-content .qa-item:nth-child(1n + 2) a {
-      border-top: none; }
-  .qa-content .down {
-    display: none; }
-  .qa-content .qa-text {
-    padding: 22px 38px;
-    background-color: #f2f2f2;
-    border-right: 1px solid #000;
-    border-left: 1px solid #000; }
-  .qa-content .qa-active .down {
-    display: block; }
-  .qa-content .qa-active .up {
-    display: none; }
-  .qa-content .qa-active .qa-text {
-    border-bottom: 1px solid #000; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media only screen and (max-width: 992px) {
+      .card-map > ul {
+        margin-bottom: 32px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+    @media only screen and (max-width: 576px) {
+      .card-map > ul {
+        margin-bottom: 20px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+    .card-map > ul > li {
+      width: 370px;
+      border: 1px solid #00000021;
+      margin-right: 24px;
+      margin-bottom: 28px; }
+      @media only screen and (max-width: 992px) {
+        .card-map > ul > li {
+          margin-bottom: 0; }
+          .card-map > ul > li:nth-child(2n) {
+            margin-right: 0; }
+          .card-map > ul > li > img {
+            display: none; } }
+      @media only screen and (max-width: 576px) {
+        .card-map > ul > li img {
+          display: block; } }
+      @media only screen and (max-width: 576px) {
+        .card-map > ul > li {
+          margin-right: 0;
+          width: 352px; }
+          .card-map > ul > li:last-child {
+            margin-bottom: 0; } }
+  .card-map h2 {
+    font-size: 24px;
+    padding: 16px 24px;
+    border-bottom: 1px solid #00000021; }
+    @media only screen and (max-width: 992px) {
+      .card-map h2 {
+        padding: 8px 0;
+        margin-bottom: 16px; } }
+  .card-map .content {
+    padding: 16px 40px; }
+    @media only screen and (max-width: 992px) {
+      .card-map .content {
+        padding: 0 24px 8px; } }
+    .card-map .content li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 20px;
+      margin-bottom: 8px; }
+      @media only screen and (max-width: 992px) {
+        .card-map .content li {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
+      .card-map .content li:last-child img {
+        height: 30px; }
+      .card-map .content li img {
+        margin-right: 8px; }
+        @media only screen and (max-width: 992px) {
+          .card-map .content li img {
+            width: 5%; } }
+    @media only screen and (max-width: 992px) {
+      .card-map .content p {
+        font-size: 14px; } }
+  .card-map a {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    border: none; }
+    @media only screen and (max-width: 992px) {
+      .card-map a {
+        display: none; } }
+
+.store-pages {
+  display: none; }
+  @media only screen and (max-width: 576px) {
+    .store-pages {
+      display: block;
+      margin-bottom: 56px; } }
+  .store-pages .pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .store-pages .pages li {
+      border: 1px solid #000;
+      margin: 0px 0px -1px -1px; }
+      .store-pages .pages li:last-child {
+        background-color: #f2f2f2; }
+      @media only screen and (max-width: 576px) {
+        .store-pages .pages li {
+          font-size: 12px; } }
+  .store-pages .number {
+    padding: 10px 15px;
+    color: #000; }
+    .store-pages .number:hover {
+      color: #ffffff;
+      background-color: #000; }
+    @media only screen and (max-width: 576px) {
+      .store-pages .number {
+        padding: 8px 10px; } }
+  .store-pages .text {
+    padding: 10px;
+    color: #000; }
+    .store-pages .text:hover {
+      color: #ffffff;
+      background-color: #9d9d9d; }
+    @media only screen and (max-width: 576px) {
+      .store-pages .text {
+        padding: 8px; } }
 
 .blog-nav {
   background-color: #650300;
@@ -2030,5 +2078,108 @@ h6 {
     @media only screen and (max-width: 576px) {
       .pages .text {
         padding: 8px; } }
+
+.qa-banner {
+  margin-bottom: 88px;
+  width: initial;
+  height: 304px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  @media only screen and (max-width: 992px) {
+    .qa-banner {
+      margin-bottom: 40px; } }
+  @media only screen and (max-width: 576px) {
+    .qa-banner {
+      margin-bottom: 24px; } }
+  @media only screen and (max-width: 576px) {
+    .qa-banner {
+      width: initial;
+      height: 143px;
+      background: url("https://upload.cc/i1/2020/05/10/vicFH3.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; } }
+  .qa-banner .content {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .qa-banner .content h2 {
+      font-size: 64px;
+      margin-right: 24px;
+      margin-bottom: 12px; }
+      @media only screen and (max-width: 992px) {
+        .qa-banner .content h2 {
+          font-size: 48px;
+          margin-left: 48px;
+          margin-right: 16px; } }
+      @media only screen and (max-width: 576px) {
+        .qa-banner .content h2 {
+          font-size: 28px;
+          margin-left: 12px;
+          margin-right: 8px; } }
+    .qa-banner .content img {
+      margin-bottom: 16px; }
+      @media only screen and (max-width: 992px) {
+        .qa-banner .content img {
+          width: 48px;
+          height: 48px; } }
+      @media only screen and (max-width: 576px) {
+        .qa-banner .content img {
+          width: 24px;
+          height: 24px; } }
+
+.qa-content {
+  margin-bottom: 156px; }
+  @media only screen and (max-width: 992px) {
+    .qa-content {
+      margin: 0 48px 104px; } }
+  @media only screen and (max-width: 576px) {
+    .qa-content {
+      margin: 0 12px 56px; } }
+  .qa-content h2 {
+    font-size: 32px;
+    margin-bottom: 16px; }
+    @media only screen and (max-width: 992px) {
+      .qa-content h2 {
+        font-size: 28px;
+        margin-bottom: 32px; } }
+    @media only screen and (max-width: 576px) {
+      .qa-content h2 {
+        font-size: 20px;
+        margin-bottom: 16px; } }
+  .qa-content .btn a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 22px 38px;
+    color: #000000;
+    border: 1px solid #000; }
+  .qa-content .qa-item {
+    position: relative;
+    z-index: 1; }
+    .qa-content .qa-item:nth-child(1n + 2) a {
+      border-top: none; }
+  .qa-content .down {
+    display: none; }
+  .qa-content .qa-text {
+    padding: 22px 38px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000; }
+  .qa-content .qa-active .down {
+    display: block; }
+  .qa-content .qa-active .up {
+    display: none; }
+  .qa-content .qa-active .qa-text {
+    border-bottom: 1px solid #000; }
 
 /*# sourceMappingURL=all.css.map */
