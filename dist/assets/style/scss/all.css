@@ -274,6 +274,9 @@ h6 {
     @media only screen and (max-width: 992px) {
       .footer .content {
         padding: 40px 48px 20px 48px; } }
+    @media only screen and (max-width: 576px) {
+      .footer .content {
+        padding: 24px 12px; } }
   .footer .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -288,6 +291,13 @@ h6 {
       .footer .nav {
         top: initial;
         right: 48px;
+        bottom: initial;
+        left: initial;
+        position: absolute; } }
+    @media only screen and (max-width: 576px) {
+      .footer .nav {
+        top: initial;
+        right: 15px;
         bottom: initial;
         left: initial;
         position: absolute; } }
@@ -417,11 +427,10 @@ h6 {
               height: 27px;
               display: block;
               top: initial;
-              right: 0;
-              bottom: initial;
+              right: -4%;
+              bottom: 10%;
               left: initial;
-              position: absolute;
-              bottom: 10%; } }
+              position: absolute; } }
     .footer .copyright .text {
       margin-left: 62px; }
       @media only screen and (max-width: 992px) {

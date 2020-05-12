@@ -8,11 +8,17 @@
     @include breakpoint(md) {
       padding: 40px 48px 20px 48px;
     }
+    @include breakpoint(xs) {
+      padding: 24px 12px;
+    }
   }
   .nav {
     @include flex-base(space-between, center);
     @include breakpoint(sm) {
       @include absolute(initial, 48px);
+    }
+    @include breakpoint(xs) {
+      @include absolute(initial, 15px);
     }
   }
   .nav-menu {
@@ -110,8 +116,7 @@
             width: 46px;
             height: 27px;
             display: block;
-            @include absolute(initial, 0);
-            bottom: 10%;
+            @include absolute(initial, -4%, 10%);
           }
         }
       }
