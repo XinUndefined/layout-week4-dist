@@ -122,6 +122,12 @@
 .classic {
   @extend %content-width;
   margin-bottom: 80px;
+  @include breakpoint(md) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint(sm) {
+    margin-bottom: 24px;
+  }
   h2 {
     font-size: 48px;
     color: $text-primary;
@@ -283,7 +289,8 @@
     }
     .img-bottomRight {
       display: flex;
-      @include breakpoint(xs) {
+      @media only screen and(max-width:375px) {
+        width: 90%;
       }
     }
     .btn {

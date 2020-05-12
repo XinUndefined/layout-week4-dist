@@ -570,6 +570,12 @@ h6 {
 
 .classic {
   margin-bottom: 80px; }
+  @media only screen and (max-width: 992px) {
+    .classic {
+      margin-bottom: 40px; } }
+  @media only screen and (max-width: 767px) {
+    .classic {
+      margin-bottom: 24px; } }
   .classic h2 {
     font-size: 48px;
     color: #650300;
@@ -772,6 +778,9 @@ h6 {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+      @media only screen and (max-width: 375px) {
+        .joint .img-main .img-bottomRight {
+          width: 90%; } }
     .joint .img-main .btn {
       max-width: 818px;
       position: relative; }
