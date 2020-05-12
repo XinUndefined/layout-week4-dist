@@ -151,7 +151,7 @@ h6 {
   font-weight: bold;
   line-height: 1.2; }
 
-.footer .content, .column ul, .classic, .joint .module, .recommend ul, .series-menu .nav, .series-content .product, .sunglasses-content .product, .store-banner .content, .area, .card, .card-map, .blog-nav .content, .blog-content, .qa-banner .content, .qa-content {
+.footer .content, .column ul, .classic, .joint .module, .recommend ul, .series-menu .nav, .series-content .product, .sunglasses-content .product, .store-banner .content, .area, .card, .card-map, .blog-nav .content, .blog-content, .blog-main, .qa-banner .content, .qa-content {
   max-width: 1200px;
   margin: 0 auto; }
 
@@ -2078,6 +2078,181 @@ h6 {
     @media only screen and (max-width: 576px) {
       .pages .text {
         padding: 8px; } }
+
+.blog-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 156px; }
+  @media only screen and (max-width: 992px) {
+    .blog-main {
+      margin-bottom: 104px; } }
+  @media only screen and (max-width: 767px) {
+    .blog-main {
+      margin: 0 12px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .blog-main .content {
+    margin-top: -80px;
+    margin-right: 24px;
+    width: 70%; }
+    @media only screen and (max-width: 992px) {
+      .blog-main .content {
+        margin-top: -32px;
+        margin-left: 48px; } }
+    @media only screen and (max-width: 767px) {
+      .blog-main .content {
+        margin: 0;
+        margin-top: -20px;
+        margin-bottom: 40px;
+        width: 100%; } }
+    .blog-main .content .breadcrumbs {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 16px; }
+      @media only screen and (max-width: 992px) {
+        .blog-main .content .breadcrumbs {
+          margin-bottom: 8px;
+          font-size: 14px; } }
+      .blog-main .content .breadcrumbs li:last-child {
+        color: #aa0601; }
+    .blog-main .content .msg {
+      font-size: 24px;
+      font-weight: 700;
+      color: #aa0601;
+      margin-right: 16px; }
+      @media only screen and (max-width: 992px) {
+        .blog-main .content .msg {
+          font-size: 16px; } }
+      @media only screen and (max-width: 767px) {
+        .blog-main .content .msg {
+          font-size: 14px; } }
+    .blog-main .content h3 {
+      font-size: 48px; }
+      @media only screen and (max-width: 992px) {
+        .blog-main .content h3 {
+          font-size: 32px; } }
+      @media only screen and (max-width: 767px) {
+        .blog-main .content h3 {
+          font-size: 20px;
+          color: #650300; } }
+    .blog-main .content .date {
+      color: #6c6c6c; }
+    .blog-main .content .text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-bottom: 24px; }
+      .blog-main .content .text p {
+        font-size: 28px;
+        font-weight: 600; }
+        @media only screen and (max-width: 992px) {
+          .blog-main .content .text p {
+            font-size: 16px;
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767px) {
+          .blog-main .content .text p {
+            font-size: 14px; } }
+    .blog-main .content p {
+      font-size: 20px;
+      margin-bottom: 40px; }
+      @media only screen and (max-width: 992px) {
+        .blog-main .content p {
+          font-size: 16px;
+          margin-bottom: 24px; } }
+    .blog-main .content > img {
+      margin-bottom: 24px; }
+      @media only screen and (max-width: 992px) {
+        .blog-main .content > img {
+          margin-bottom: 8px; } }
+    .blog-main .content .icon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #707070;
+      margin-bottom: 24px; }
+      @media only screen and (max-width: 992px) {
+        .blog-main .content .icon {
+          font-size: 16px;
+          margin-bottom: 16px; } }
+      .blog-main .content .icon img {
+        margin-left: 16px; }
+        @media only screen and (max-width: 992px) {
+          .blog-main .content .icon img {
+            width: 20px;
+            height: 20px; } }
+    .blog-main .content ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media only screen and (max-width: 767px) {
+        .blog-main .content ul {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+      .blog-main .content ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .blog-main .content ul img {
+        margin-right: 8px; }
+      .blog-main .content ul .img {
+        margin-right: 0;
+        margin-left: 8px; }
+        @media only screen and (max-width: 767px) {
+          .blog-main .content ul .img {
+            display: none; } }
+    .blog-main .content .sm-img {
+      display: none; }
+      @media only screen and (max-width: 767px) {
+        .blog-main .content .sm-img {
+          display: block; } }
+
+.tags {
+  color: #aa0601; }
+  @media only screen and (max-width: 992px) {
+    .tags {
+      margin-right: 28px; } }
+  @media only screen and (max-width: 767px) {
+    .tags {
+      margin-bottom: 56px; } }
+  .tags h4 {
+    font-size: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media only screen and (max-width: 992px) {
+      .tags h4 {
+        font-size: 20px; } }
+    .tags h4 img {
+      margin-right: 8px; }
+  .tags ul {
+    font-size: 24px;
+    font-weight: 700; }
+    @media only screen and (max-width: 992px) {
+      .tags ul {
+        font-size: 16px; } }
 
 .qa-banner {
   margin-bottom: 88px;
