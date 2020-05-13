@@ -61,14 +61,7 @@
     @include flex-base(start, center);
     margin-bottom: 16px;
     p {
-      font-size: 36px;
       color: $base-secondary;
-      @include breakpoint(md) {
-        font-size: 20px;
-      }
-      @include breakpoint(sm) {
-        font-size: 16px;
-      }
     }
     .phone {
       margin-right: 23px;
