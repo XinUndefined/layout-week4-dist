@@ -1,114 +1,66 @@
-.font--level-1 {
-  font-size: 4.5rem; }
-  @media only screen and (max-width: 992px) {
-    .font--level-1 {
-      font-size: 2rem; } }
-
-.font--level-2 {
-  font-size: 4rem; }
-  @media only screen and (max-width: 992px) {
-    .font--level-2 {
-      font-size: 3rem; } }
-  @media only screen and (max-width: 767px) {
-    .font--level-2 {
-      font-size: 2rem; } }
-
-.font--level-3 {
-  font-size: 3rem; }
-  @media only screen and (max-width: 992px) {
-    .font--level-3 {
-      font-size: 2rem; } }
-  @media only screen and (max-width: 767px) {
-    .font--level-3 {
-      font-size: 1.5rem; } }
-
-.font--level-4 {
-  font-size: 3rem; }
-  @media only screen and (max-width: 992px) {
-    .font--level-4 {
-      font-size: 2rem; } }
-  @media only screen and (max-width: 576px) {
-    .font--level-4 {
-      font-size: 1.5rem; } }
-
-.font--level-5 {
-  font-size: 3rem; }
-  @media only screen and (max-width: 992px) {
-    .font--level-5 {
-      font-size: 1.75rem; } }
-
-.font--level-6 {
-  font-size: 2.25rem; }
-  @media only screen and (max-width: 992px) {
-    .font--level-6 {
-      font-size: 1.25rem; } }
-  @media only screen and (max-width: 767px) {
-    .font--level-6 {
-      font-size: 1rem; } }
-
 @media only screen and (max-width: 1920px) {
-  .font--more {
-    font-size: 4.5rem; } }
+  .font-more {
+    font-size: 72px; } }
 
 @media only screen and (max-width: 1820px) {
-  .font--more {
-    font-size: 4.25rem; } }
+  .font-more {
+    font-size: 68px; } }
 
 @media only screen and (max-width: 1720px) {
-  .font--more {
-    font-size: 4rem; } }
+  .font-more {
+    font-size: 64px; } }
 
 @media only screen and (max-width: 1620px) {
-  .font--more {
-    font-size: 3.75rem; } }
+  .font-more {
+    font-size: 60px; } }
 
 @media only screen and (max-width: 1520px) {
-  .font--more {
-    font-size: 3.5rem; } }
+  .font-more {
+    font-size: 56px; } }
 
 @media only screen and (max-width: 1420px) {
-  .font--more {
-    font-size: 3.25rem; } }
+  .font-more {
+    font-size: 52px; } }
 
 @media only screen and (max-width: 1320px) {
-  .font--more {
-    font-size: 3rem; } }
+  .font-more {
+    font-size: 48px; } }
 
 @media only screen and (max-width: 1220px) {
-  .font--more {
-    font-size: 2.75rem; } }
+  .font-more {
+    font-size: 44px; } }
 
 @media only screen and (max-width: 1120px) {
-  .font--more {
-    font-size: 2.5rem; } }
+  .font-more {
+    font-size: 40px; } }
 
 @media only screen and (max-width: 1020px) {
-  .font--more {
-    font-size: 2.25rem; } }
+  .font-more {
+    font-size: 36px; } }
 
 @media only screen and (max-width: 920px) {
-  .font--more {
-    font-size: 2rem; } }
+  .font-more {
+    font-size: 32px; } }
 
 @media only screen and (max-width: 820px) {
-  .font--more {
-    font-size: 1.75rem; } }
+  .font-more {
+    font-size: 28px; } }
 
 @media only screen and (max-width: 720px) {
-  .font--more {
-    font-size: 1.5rem; } }
+  .font-more {
+    font-size: 24px; } }
 
 @media only screen and (max-width: 620px) {
-  .font--more {
-    font-size: 1.25rem; } }
+  .font-more {
+    font-size: 20px; } }
 
 @media only screen and (max-width: 520px) {
-  .font--more {
-    font-size: 1rem; } }
+  .font-more {
+    font-size: 16px; } }
 
 @media only screen and (max-width: 420px) {
-  .font--more {
-    font-size: 0.75rem; } }
+  .font-more {
+    font-size: 12px; } }
 
 html,
 body,
@@ -242,7 +194,7 @@ table {
 
 body,
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   font-size: 16px; }
 
@@ -457,7 +409,14 @@ h6 {
             align-items: center;
     margin-bottom: 16px; }
     .footer .liaison p {
+      font-size: 36px;
       color: #ffffff; }
+      @media only screen and (max-width: 992px) {
+        .footer .liaison p {
+          font-size: 20px; } }
+      @media only screen and (max-width: 767px) {
+        .footer .liaison p {
+          font-size: 16px; } }
     .footer .liaison .phone {
       margin-right: 23px; }
       @media only screen and (max-width: 992px) {
@@ -579,11 +538,25 @@ h6 {
       .banner .content {
         right: 5%; } }
     .banner .content p {
+      font-size: 36px;
       text-align: end;
       color: #650300;
       font-weight: 600; }
+      @media only screen and (max-width: 992px) {
+        .banner .content p {
+          font-size: 20px; } }
+      @media only screen and (max-width: 576px) {
+        .banner .content p {
+          font-size: 16px; } }
     .banner .content h2 {
-      color: #650300; }
+      color: #650300;
+      font-size: 64px; }
+      @media only screen and (max-width: 992px) {
+        .banner .content h2 {
+          font-size: 48px; } }
+      @media only screen and (max-width: 576px) {
+        .banner .content h2 {
+          font-size: 32px; } }
 
 .column {
   background-color: #aa06010d;
@@ -595,15 +568,18 @@ h6 {
     .column {
       margin-bottom: 24px; } }
   .column h3 {
+    font-size: 48px;
     color: #650300;
     text-align: center;
     padding: 64px 0; }
     @media only screen and (max-width: 992px) {
       .column h3 {
-        padding: 40px 0 32px 0; } }
+        padding: 40px 0 32px 0;
+        font-size: 32px; } }
     @media only screen and (max-width: 576px) {
       .column h3 {
-        padding: 32px 0; } }
+        padding: 32px 0;
+        font-size: 24px; } }
   .column ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -674,15 +650,18 @@ h6 {
     .classic {
       margin-bottom: 24px; } }
   .classic h2 {
+    font-size: 48px;
     color: #650300;
     text-align: center;
     margin-bottom: 60px; }
     @media only screen and (max-width: 992px) {
       .classic h2 {
-        margin-bottom: 32px; } }
+        margin-bottom: 32px;
+        font-size: 32px; } }
     @media only screen and (max-width: 767px) {
       .classic h2 {
-        margin-bottom: 16px; } }
+        margin-bottom: 16px;
+        font-size: 24px; } }
   .classic .item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -817,10 +796,14 @@ h6 {
           background-position: center center;
           margin: 8px; } }
   .classic h5 {
+    font-size: 48px;
     color: #aa0601;
     margin-right: 24px;
     line-height: normal;
     display: block; }
+    @media only screen and (max-width: 992px) {
+      .classic h5 {
+        font-size: 28px; } }
     @media only screen and (max-width: 767px) {
       .classic h5 {
         color: #ffffff; } }
@@ -833,15 +816,18 @@ h6 {
   background-repeat: no-repeat;
   background-position: center center; }
   .joint h2 {
+    font-size: 48px;
     color: #ffffff;
     text-align: center;
     padding: 64px 0 60px 0; }
     @media only screen and (max-width: 992px) {
       .joint h2 {
-        padding: 40px 0 32px 0; } }
+        padding: 40px 0 32px 0;
+        font-size: 32px; } }
     @media only screen and (max-width: 576px) {
       .joint h2 {
-        padding: 24px 0 16px 0; } }
+        padding: 24px 0 16px 0;
+        font-size: 24px; } }
   .joint .img-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -999,6 +985,7 @@ h6 {
             -ms-flex-pack: center;
                 justify-content: center; } }
     .joint .module h3 {
+      font-size: 72px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1012,6 +999,9 @@ h6 {
       background-color: rgba(255, 255, 255, 0.5);
       width: 100%;
       height: 100%; }
+      @media only screen and (max-width: 992px) {
+        .joint .module h3 {
+          font-size: 32px; } }
     .joint .module .img-dobule {
       width: 585px;
       height: 592px;
@@ -1049,15 +1039,18 @@ h6 {
     .recommend {
       margin-top: -380px; } }
   .recommend h2 {
+    font-size: 48px;
     color: #ffffff;
     text-align: center;
     margin-bottom: 60px; }
     @media only screen and (max-width: 992px) {
       .recommend h2 {
-        margin-bottom: 32px; } }
+        margin-bottom: 32px;
+        font-size: 32px; } }
     @media only screen and (max-width: 576px) {
       .recommend h2 {
-        margin-bottom: 16px; } }
+        margin-bottom: 16px;
+        font-size: 24px; } }
   .recommend ul {
     margin-bottom: 80px;
     display: -webkit-box;
@@ -1119,14 +1112,17 @@ h6 {
         margin: 0 24px;
         padding: 24px 0 48px; } }
   .contact h2 {
+    font-size: 48px;
     text-align: center;
     padding-bottom: 24px; }
     @media only screen and (max-width: 992px) {
       .contact h2 {
-        padding-bottom: 16px; } }
+        padding-bottom: 16px;
+        font-size: 32px; } }
     @media only screen and (max-width: 576px) {
       .contact h2 {
-        padding-bottom: 8px; } }
+        padding-bottom: 8px;
+        font-size: 24px; } }
   .contact p {
     font-size: 20px;
     margin-bottom: 20px; }
@@ -1193,7 +1189,10 @@ h6 {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
     .series-menu .nav li {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1218,12 +1217,12 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 42px;
     font-weight: 600;
     color: #000;
@@ -1295,6 +1294,9 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .series-content .product li {
@@ -1336,6 +1338,9 @@ h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     font-size: 24px;
     font-weight: 500; }
     .series-content .content-text p:last-child {
@@ -1375,7 +1380,10 @@ h6 {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
     .series-content .pages li {
       border: 1px solid #000;
       margin: 0px 0px -1px -1px; }
@@ -1429,6 +1437,9 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .sunglasses-content .product li {
@@ -1482,7 +1493,10 @@ h6 {
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between; } }
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start; } }
   @media only screen and (max-width: 767px) {
     .sunglasses-content .content-text {
       font-size: 16px;
@@ -1526,7 +1540,10 @@ h6 {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start; }
   .sunglasses-content .pages li {
     border: 1px solid #000;
     margin: 0px 0px -1px -1px; }
@@ -1584,14 +1601,17 @@ h6 {
         -ms-flex-align: end;
             align-items: flex-end; }
     .store-banner .content h2 {
+      font-size: 64px;
       margin-right: 24px;
       margin-bottom: 12px; }
       @media only screen and (max-width: 992px) {
         .store-banner .content h2 {
+          font-size: 48px;
           margin-left: 48px;
           margin-right: 16px; } }
       @media only screen and (max-width: 576px) {
         .store-banner .content h2 {
+          font-size: 28px;
           margin-left: 12px;
           margin-right: 8px; } }
     .store-banner .content img {
@@ -1600,7 +1620,7 @@ h6 {
         .store-banner .content img {
           width: 30px;
           height: 43px; } }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 576px) {
         .store-banner .content img {
           width: 16px;
           height: 24px; } }
@@ -1609,6 +1629,9 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1661,11 +1684,14 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .card > ul > li {
       width: 370px;
       border: 1px solid #00000021;
@@ -1718,7 +1744,10 @@ h6 {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
     .store-pages .pages li {
       border: 1px solid #000;
       margin: 0px 0px -1px -1px; }
@@ -1779,7 +1808,10 @@ h6 {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
     @media only screen and (max-width: 992px) {
       .card-map > ul {
         margin-bottom: 32px;
@@ -1869,7 +1901,10 @@ h6 {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
     .store-pages .pages li {
       border: 1px solid #000;
       margin: 0px 0px -1px -1px; }
@@ -1914,6 +1949,9 @@ h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     padding: 13px 0; }
     @media only screen and (max-width: 992px) {
       .blog-nav .content {
@@ -2036,6 +2074,9 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   margin-bottom: 40px; }
   @media only screen and (max-width: 992px) {
     .blog-content .text-content {
@@ -2054,6 +2095,7 @@ h6 {
       font-size: 14px; } }
 
 .blog-content a {
+  font-size: 36px;
   color: #000;
   font-weight: 700;
   text-align: end; }
@@ -2079,6 +2121,9 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   margin-bottom: 156px; }
   @media only screen and (max-width: 992px) {
     .pages {
@@ -2164,9 +2209,15 @@ h6 {
       @media only screen and (max-width: 767px) {
         .blog-main .content .msg {
           font-size: 14px; } }
-    @media only screen and (max-width: 767px) {
-      .blog-main .content h3 {
-        color: #650300; } }
+    .blog-main .content h3 {
+      font-size: 48px; }
+      @media only screen and (max-width: 992px) {
+        .blog-main .content h3 {
+          font-size: 32px; } }
+      @media only screen and (max-width: 767px) {
+        .blog-main .content h3 {
+          font-size: 20px;
+          color: #650300; } }
     .blog-main .content .date {
       color: #6c6c6c; }
     .blog-main .content .text {
@@ -2176,6 +2227,9 @@ h6 {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start;
       margin-bottom: 24px; }
       .blog-main .content .text p {
         font-size: 28px;
@@ -2203,6 +2257,9 @@ h6 {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: initial;
+          -ms-flex-pack: initial;
+              justify-content: initial;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -2226,7 +2283,10 @@ h6 {
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between; }
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start; }
       @media only screen and (max-width: 767px) {
         .blog-main .content ul {
           -webkit-box-orient: vertical;
@@ -2237,6 +2297,9 @@ h6 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: initial;
+            -ms-flex-pack: initial;
+                justify-content: initial;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
@@ -2267,6 +2330,9 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
@@ -2309,18 +2375,24 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end; }
     .qa-banner .content h2 {
+      font-size: 64px;
       margin-right: 24px;
       margin-bottom: 12px; }
       @media only screen and (max-width: 992px) {
         .qa-banner .content h2 {
+          font-size: 48px;
           margin-left: 48px;
           margin-right: 16px; } }
       @media only screen and (max-width: 576px) {
         .qa-banner .content h2 {
+          font-size: 28px;
           margin-left: 12px;
           margin-right: 8px; } }
     .qa-banner .content img {
@@ -2329,7 +2401,7 @@ h6 {
         .qa-banner .content img {
           width: 48px;
           height: 48px; } }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 576px) {
         .qa-banner .content img {
           width: 24px;
           height: 24px; } }
@@ -2360,6 +2432,9 @@ h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     padding: 22px 38px;
     color: #000000;
     border: 1px solid #000; }

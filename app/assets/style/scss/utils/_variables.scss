@@ -2,28 +2,3 @@ $text-primary: #650300;
 $bg-primary: #aa06010d;
 $base-primary: #aa0601;
 $base-secondary: #ffffff;
-$rem-base: 1rem;
-$font-pc: (
-  1: $rem-base * 4.5,
-  2: $rem-base * 4,
-  3: $rem-base * 3,
-  4: $rem-base * 3,
-  5: $rem-base * 3,
-  6: $rem-base * 2.25,
-);
-$font-md: (
-  1: $rem-base * 2,
-  2: $rem-base * 3,
-  3: $rem-base * 2,
-  4: $rem-base * 2,
-  5: $rem-base * 1.75,
-  6: $rem-base * 1.25,
-);
-$font-sm: (
-  2: $rem-base * 2,
-  3: $rem-base * 1.5,
-  6: $rem-base * 1,
-);
-$font-xs: (
-  4: $rem-base * 1.5,
-);

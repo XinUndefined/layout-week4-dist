@@ -10,8 +10,7 @@
   }
   .content {
     @extend %content-width;
-    display: flex;
-    justify-content: space-between;
+    @include flex-base(space-between);
     padding: 13px 0;
     @include breakpoint(md) {
       margin: 0 48px;
@@ -133,8 +132,7 @@
     }
   }
   .text-content {
-    display: flex;
-    justify-content: space-between;
+    @include flex-base(space-between);
     margin-bottom: 40px;
     @include breakpoint(md) {
       margin-bottom: 16px;
@@ -156,6 +154,7 @@
     }
   }
   a {
+    font-size: 36px;
     color: #000;
     font-weight: 700;
     text-align: end;
@@ -179,8 +178,7 @@
   }
 }
 .pages {
-  display: flex;
-  justify-content: center;
+  @include flex-base(center);
   margin-bottom: 156px;
   @include breakpoint(md) {
     margin-bottom: 104px;

@@ -19,8 +19,7 @@
   }
   .product {
     @extend %content-width;
-    display: flex;
-    justify-content: center;
+    @include flex-base(center);
     flex-wrap: wrap;
     li {
       width: 30%;
@@ -76,8 +75,7 @@
       color: $base-primary;
     }
     @include breakpoint(md) {
-      display: flex;
-      justify-content: space-between;
+      @include flex-base(space-between);
     }
     @include breakpoint(sm) {
       font-size: 16px;
@@ -117,8 +115,7 @@
     }
   }
   .pages {
-    display: flex;
-    justify-content: center;
+    @include flex-base(center);
     li {
       border: 1px solid #000;
       margin: 0px 0px -1px -1px;

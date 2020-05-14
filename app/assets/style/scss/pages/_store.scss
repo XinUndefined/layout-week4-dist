@@ -17,13 +17,16 @@
     display: flex;
     align-items: flex-end;
     h2 {
+      font-size: 64px;
       margin-right: 24px;
       margin-bottom: 12px;
       @include breakpoint(md) {
+        font-size: 48px;
         margin-left: 48px;
         margin-right: 16px;
       }
       @include breakpoint(xs) {
+        font-size: 28px;
         margin-left: 12px;
         margin-right: 8px;
       }
@@ -34,7 +37,7 @@
         width: 30px;
         height: 43px;
       }
-      @include breakpoint(sm) {
+      @include breakpoint(xs) {
         width: 16px;
         height: 24px;
       }
@@ -43,8 +46,7 @@
 }
 .area {
   @extend %content-width;
-  display: flex;
-  align-items: center;
+  @include flex-base(initial, center);
   margin-bottom: 32px;
   @include breakpoint(md) {
     margin-bottom: 24px;
@@ -93,9 +95,8 @@
     margin-bottom: 40px;
   }
   & > ul {
-    display: flex;
+    @include flex-base(center);
     flex-wrap: wrap;
-    justify-content: center;
     & > li {
       width: 370px;
       border: 1px solid #00000021;
@@ -152,8 +153,7 @@
     margin-bottom: 56px;
   }
   .pages {
-    display: flex;
-    justify-content: center;
+    @include flex-base(center);
     li {
       border: 1px solid #000;
       margin: 0px 0px -1px -1px;

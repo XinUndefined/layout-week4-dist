@@ -21,8 +21,7 @@
     }
   }
   & > ul {
-    display: flex;
-    justify-content: center;
+    @include flex-base(center);
     @include breakpoint(md) {
       margin-bottom: 32px;
       align-items: center;
@@ -115,8 +114,7 @@
     margin-bottom: 56px;
   }
   .pages {
-    display: flex;
-    justify-content: center;
+    @include flex-base(center);
     li {
       border: 1px solid #000;
       margin: 0px 0px -1px -1px;

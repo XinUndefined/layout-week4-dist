@@ -13,6 +13,13 @@
     }
   }
 }
+@for $i from 1 through 16 {
+  .font-more {
+    @media only screen and(max-width:2020px-$i*100) {
+      font-size: 76px-$i * 4;
+    }
+  }
+}
 @mixin flex-base($justify-content: start, $align-items: start) {
   display: flex;
   justify-content: $justify-content;
@@ -43,33 +50,4 @@
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
-}
-@mixin font--level-($level) {
-  @if ($level == $level) {
-    font-size: map-get($font-pc, $level);
-    @include breakpoint(md) {
-      font-size: map-get($font-md, $level);
-    }
-    @include breakpoint(sm) {
-      font-size: map-get($font-sm, $level);
-    }
-    @include breakpoint(xs) {
-      font-size: map-get($font-xs, $level);
-    }
-  }
-}
-@for $i from 1 through length($font-pc) {
-  .font--level-#{$i} {
-    @include font--level-($i);
-  }
-}
-// more無腦改版2.0
-// 老師雖然你有說重要斷點改字體大小就好
-// 不過我還是看不慣1920慢慢拉到375出現跑版問題
-@for $i from 1 through 16 {
-  .font--more {
-    @media only screen and(max-width:2020px-$i*100) {
-      font-size: 4.75rem-$i * 0.25rem;
-    }
-  }
 }

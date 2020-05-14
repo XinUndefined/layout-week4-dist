@@ -9,8 +9,7 @@
   }
   .nav {
     @extend %content-width;
-    display: flex;
-    justify-content: center;
+    @include flex-base(center);
 
     li {
       display: flex;
@@ -34,9 +33,7 @@
     }
   }
   .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-base(center, center);
     font-size: 42px;
     font-weight: 600;
     color: #000;
@@ -110,8 +107,7 @@
   }
   .product {
     @extend %content-width;
-    display: flex;
-    justify-content: center;
+    @include flex-base(center);
     flex-wrap: wrap;
     li {
       width: 23%;
@@ -153,8 +149,7 @@
   }
   .content-text {
     max-width: 282px;
-    display: flex;
-    justify-content: space-between;
+    @include flex-base(space-between);
     font-size: 24px;
     font-weight: 500;
     p:last-child {
@@ -192,8 +187,7 @@
     }
   }
   .pages {
-    display: flex;
-    justify-content: center;
+    @include flex-base(center);
     li {
       border: 1px solid #000;
       margin: 0px 0px -1px -1px;
